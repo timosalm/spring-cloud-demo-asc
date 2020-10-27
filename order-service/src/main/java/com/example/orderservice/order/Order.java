@@ -2,6 +2,7 @@ package com.example.orderservice.order;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.ValidationException;
@@ -15,7 +16,7 @@ public class Order implements Serializable { // Serializable required for Redis 
     private static final long serialVersionUID = -1122620860862785845L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long productId;
     private OrderStatus orderStatus = OrderStatus.CREATED;

@@ -1,6 +1,7 @@
 #management.metrics.export.wavefront.api-token=
 #management.metrics.export.wavefront.uri=
 spring.cloud.stream.bindings:
-  shipOrder-in-0.destination: order-shipping-exchange
-  shipOrder-out-0.destination: order-delivered-exchange
+  shipOrder-in-0.destination: order-shipping-queue
+  shipOrder-out-0.destination: order-delivered-queue
+spring.cloud.azure.servicebus.connection-string:
 shipping.duration: 10000
