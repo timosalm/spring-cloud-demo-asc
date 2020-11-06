@@ -1,6 +1,6 @@
 #management.metrics.export.wavefront.api-token:
 #management.metrics.export.wavefront.uri:
-spring.jms.servicebus.connection-string:
+#spring.jms.servicebus.connection-string:
 order:
   delivered-queue-name: order-delivered-queue
   shipping-queue-name: order-shipping-queue
