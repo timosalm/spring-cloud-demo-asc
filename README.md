@@ -20,7 +20,7 @@ Information on how to set up the Azure CLI is available [here](https://docs.micr
     ```
 2. Configure Spring Cloud Config Server Git repository
     ```
-    az spring-cloud config-server git set --uri https://github.com/tsalm-pivotal/spring-cloud-demo-asc --label main --search-paths config-server-configuration --name ${SPRING_CLOUD_NAME}
+    az spring-cloud config-server git set --uri https://github.com/tsalm-pivotal/spring-cloud-demo-asc --label master --search-paths config-server-configuration --name ${SPRING_CLOUD_NAME}
     ```
 3. Create services
     ```
