@@ -25,7 +25,7 @@ Information on how to set up the Azure CLI is available [here](https://docs.micr
 3. Create services
     ```
     az mysql server create -n ${SPRING_CLOUD_NAME}-mysql-server -l westeurope --sku-name B_Gen5_1 -u sc-user -p SpringCloud20!
-    az mysql db create -s $MYSQL_SERVER_NAME -n order-db
+    az mysql db create -s ${SPRING_CLOUD_NAME}-mysql-server -n order-db
     az mysql server firewall-rule create -n AllowAllWindowsAzureIps -s ${SPRING_CLOUD_NAME}-mysql-server --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
     MYSQL_SERVER_RESOURCE_ID="$(az mysql server show -n ${SPRING_CLOUD_NAME}-mysql-server | grep '\"id\":'| sed 's/.*\"id\": \"//' | sed 's/\",//')"
     az redis create -n ${SPRING_CLOUD_NAME}-redis -l westeurope --sku Basic --vm-size c0
