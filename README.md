@@ -2,6 +2,7 @@
 # Demo for a typical Spring Cloud Architecture on Azure Spring Cloud
 
 **See repository [here](https://github.com/tsalm-pivotal/spring-cloud-demo) for the same application deployed on TAS/PCF/CF**
+
 **See repository [here](https://github.com/tsalm-pivotal/spring-cloud-demo-k8s) for the same application deployed on Kubernetes**
 
 ![](architecture.png)
